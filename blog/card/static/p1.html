@@ -11,16 +11,38 @@
     <style>
         img{
             float:left;
+            margin-left: 25px;
         }
         .hote{
             height: 408px;
             margin-left: 30px;
             text-align: center;
-            padding-top: 200px;
-            background: rgb(30, 0, 255);
+            padding-top: 170px;
+            margin-left: 45%;
+            margin-right: 40px;
+            background: rgba(30, 0, 255, 0.496);
         }
         h1{
             font-size: 70px ;
+        }
+        .wid{
+            width: 60%;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+        .ma{
+            line-height: 10px;
+        }
+        .row{
+            width: 90%;
+            margin-bottom: 20px;
+        }
+        h2{
+            margin-top: 10px;
+            margin-left: 90px;
+        }
+        .container{
+            margin-bottom: 20px;
         }
     </style>
   </head>
@@ -57,6 +79,22 @@
         <script>hljs.initHighlightingOnLoad();</script>
       </head>
       <body>
+        <h2>Functions Created</h2>
+        <div class="container">
+            <div class="row">
+              <div class="ma"><br><h5>1)Home()</h5>Function to display the project’s main screen. </div>
+              <div class="ma"><br><h5>2)Date(str)</h5>Function to validate date entered by the user/customer.</div>
+              <div class="ma"><br><h5>3)Booking()</h5>Function for booking room in hotel by entering user/customer details. </div>
+              <div class="ma"><br><h5>4)Room_info()</h5>Function to provide users/customers with hotel rooms information(i.e. about room amenities).</div>
+              <div class="ma"><br><h5>5)Restaurant()</h5>Function for room service which provides user/customer with the restaurant’s menu card to order food at the room.</div>
+              <div class="ma"><br><h5>6)Payment()</h5>Function for payment of hotel room and restaurant bill generation at the time of check-out. </div>
+              <div class="ma"><br><h5>7)Record()</h5>Function for keeping records of customers stayed in the hotel. </div>
+            </div>
+          </div>
+
+                
+
+     <div class="wid">
         <pre><code class="python">
         import random
         import datetime
@@ -593,5 +631,6 @@
         Home()
 
         </code></pre>
+    </div>
     </body>
         
