@@ -13,27 +13,54 @@
             float:left;
             width: 782px ;
             height: 440px ;
+            margin-left: 25px;
         }
         .hote{
-            height: 440px;
-            margin-left: 30px;
-            text-align: center;
-            padding-top: 200px;
-            background: rgb(30, 0, 255);
+        height: 440px;
+        margin-left: 30px;
+        text-align: center;
+        padding-top: 170px;
+        margin-left: 55%;
+        margin-right: 40px;
+        background: rgba(30, 0, 255, 0.496);;
+        margin-top: 30px;
         }
         h1{
             font-size: 60px ;
 
         }
         h2{
-            background-color:gainsboro;
+            margin-top: 20px;
+            margin-left: 25px;
         }
+        .wid {
+            width: 60%;
+            margin-top: 20px;
+            margin-left: 30px;
+          }
+        .par{
+            margin-top: 20px;
+            width: 50%;
+            margin-left: 30px;
+          }
+          h3{
+            margin-left: 25px;
+            margin-top: 10px;
+          }
     </style>
   </head>
   <body>
     <img src="video.jpg" class="img-fluid" alt="...">
     <div class="hote">
         <h1>Video Streaming Using UDP Socket Programming</h1>
+    </div>
+    <h3>Socket Programming</h3>
+    <div class="par">
+    <p>Socket programming is a way of connecting two or more nodes on a network to communicate with each other. One socket(node) listens on a particular port at an IP, while the other sockets reach out to the other to form a connection. The server forms the listener socket while the client reaches out to the server. They are the real backbones behind web browsing. In simpler terms, there is a server and a client.</p>
+    </div>
+    <h3>Server</h3>
+    <div class="par">
+        <p>A server has a bind() method which binds it to a specific IP and port so that it can listen to incoming requests on that IP and port. A server has a listen() method which puts the server into listening mode. This allows the server to listen to incoming connections. And last a server has an accept() and close() method. The accept method initiates a connection with the client and the close method closes the connection with the client.</p>
     </div>
     <head>
         <link rel="stylesheet"
@@ -42,7 +69,8 @@
         <script>hljs.initHighlightingOnLoad();</script>
       </head>
       <body>
-        <h2>Server.py</h2>
+          <h2>Server.py</h2>
+        <div class="wid">
         <pre><code class="python">
         import cv2, imutils, socket
         import numpy as np
@@ -88,7 +116,10 @@
                         pass
                 cnt+=1
         </code></pre>
+        </div>
+        
         <h2>Client.py</h2>
+        <div class="wid">
         <pre><code class="python">
             
         import cv2, imutils, socket
@@ -127,5 +158,6 @@
                     pass
             cnt+=1
         </code></pre>
+        </div>
     </body>
         
